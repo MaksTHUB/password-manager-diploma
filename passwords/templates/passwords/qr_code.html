@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Authenticator QR Code</title>
+</head>
+<body>
+    <h2>Scan this QR code in Google Authenticator</h2>
+    <p>QR-code</strong></p>
+    {% comment %} <img src="data:image/png;base64,{{ qr_code }}" alt="QR Code"> {% endcomment %}
+    <p>Or enter manually: <strong>{{ otp_secret }}</strong></p>
+</body>
+</html>

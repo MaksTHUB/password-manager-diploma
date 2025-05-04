@@ -1,0 +1,1 @@
+print(Fernet.generate_key())

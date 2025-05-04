@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'passwords/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Your Passwords</h2>
+
+        {% if entries %}
+            <ul>
+                {% for entry in entries %}
+                    <li>
+                        <strong>{{ entry.website }}</strong> — {{ entry.username }}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No entries found.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

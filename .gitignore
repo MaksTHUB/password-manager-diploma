@@ -1,0 +1,5 @@
+.env.enc
+.keys.enc
+*.json
+__pycache__/
+*.sqlite3
